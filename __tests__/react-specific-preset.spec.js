@@ -1,4 +1,4 @@
-describe('jest-preset.json', () => {
+describe('react-specific-preset.json', () => {
   it('should be valid parseable json', () => {
     let isValidJson = true;
     try {
