@@ -16,7 +16,9 @@
     "enzyme-to-json": "^1.4.5",
     "identity-obj-proxy": "^3.0.0",
     "jasmine-reporters": "^2.2.0",
-    "react-addons-test-utils": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2"
+  },
+  "peerDependencies": {
     "react-dom": "*",
     "react": "*"
   },
@@ -35,6 +37,9 @@
   "scripts": {
     "test": "jest",
     "postinstall": "node scripts/create-jest-preset.js"
+  },
+  "jest": {
+    "preset": "one-amex-jest-preset"
   },
   "publishConfig": {
     "registry": "****.com/artifactory/api/npm/npm-virtual"
