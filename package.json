@@ -13,14 +13,14 @@
   "dependencies": {
     "one-amex-jest-preset": "^2.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "jasmine-reporters": "^2.2.0",
+    "jasmine-reporters": "^2.2.0"
   },
   "peerDependencies": {
     "react-dom": "*",
     "react": "*",
     "react-addons-test-utils": "^15.4.2",
     "enzyme": "^2.7.1",
-    "enzyme-to-json": "^1.4.5",
+    "enzyme-to-json": "^1.4.5"
   },
   "devDependencies": {
     "jest": "^18.1.0"
