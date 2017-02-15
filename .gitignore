@@ -1,0 +1,12 @@
+# dependencies
+node_modules
+
+# testing
+test-results
+jest-preset.json
+# misc
+.DS_Store
+npm-debug.log
+
+# IDEs
+.idea

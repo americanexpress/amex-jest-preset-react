@@ -1,0 +1,47 @@
+{
+  "name": "one-amex-jest-preset-react",
+  "description": "An opinionated Jest preset for One Amex React modules",
+  "version": "1.0.0",
+  "author": "UI Engineering (****.com/stash/projects/UIE)",
+  "keywords": [
+    "jest",
+    "preset",
+    "One Amex",
+    "react",
+    "quality"
+  ],
+  "dependencies": {
+    "one-amex-jest-preset": "^2.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jasmine-reporters": "^2.2.0"
+  },
+  "peerDependencies": {
+    "react-dom": "*",
+    "react": "*",
+    "react-addons-test-utils": "^15.4.2",
+    "enzyme": "^2.7.1",
+    "enzyme-to-json": "^1.4.5"
+  },
+  "devDependencies": {
+    "jest": "^18.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh:****.com/uie/one-amex-jest-preset-react.git"
+  },
+  "files": [
+    "react-specific-preset.json",
+    "scripts/create-jest-preset.js"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "test": "jest",
+    "postinstall": "node scripts/create-jest-preset.js"
+  },
+  "jest": {
+    "preset": "one-amex-jest-preset"
+  },
+  "publishConfig": {
+    "registry": "****.com/artifactory/api/npm/npm-virtual"
+  }
+}
