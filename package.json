@@ -2,7 +2,10 @@
   "name": "one-amex-jest-preset-react",
   "description": "An opinionated Jest preset for One Amex React modules",
   "version": "1.0.0",
-  "author": "UI Engineering (****.com/stash/projects/UIE)",
+  "contributors": [
+    "Andres Escobar <Andres.Escobar@aexp.com>",
+    "Jimmy King <Jimmy.King@aexp.com>"
+  ],
   "keywords": [
     "jest",
     "preset",
@@ -27,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh:****.com/uie/one-amex-jest-preset-react.git"
+    "url": "ssh:****.com/one/one-amex-jest-preset-react.git"
   },
   "files": [
     "react-specific-preset.json",
