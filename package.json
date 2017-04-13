@@ -10,7 +10,7 @@
     "quality"
   ],
   "dependencies": {
-    "amex-jest-preset": "^2.0.0",
+    "amex-jest-preset": "^3.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jasmine-reporters": "^2.2.0"
   },
@@ -24,6 +24,10 @@
   "devDependencies": {
     "jest": "^18.1.0"
   },
+  "contributors": [
+    "Andres Escobar",
+    "Jimmy King"
+  ],
   "author": "Andres Escobar <andres.escobar@aexp.com> (https://github.com/anescobar1991)",
   "license": "Apache-2.0",
   "repository": {
