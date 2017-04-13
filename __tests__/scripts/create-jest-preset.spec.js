@@ -14,7 +14,7 @@ const mockReactSpecificPreset = {
   },
 };
 
-jest.mock('one-amex-jest-preset/jest-preset.json', () => mockBasePreset);
+jest.mock('amex-jest-preset/jest-preset.json', () => mockBasePreset);
 
 jest.mock('../../react-specific-preset.json', () => mockReactSpecificPreset);
 
