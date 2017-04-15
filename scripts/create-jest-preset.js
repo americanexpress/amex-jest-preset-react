@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const basePreset = require('one-amex-jest-preset/jest-preset.json');
+const basePreset = require('amex-jest-preset/jest-preset.json');
 const reactSpecificPreset = require('../react-specific-preset.json');
 const combinedPreset = Object.assign({}, basePreset, reactSpecificPreset);
 

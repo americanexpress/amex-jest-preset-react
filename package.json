@@ -1,20 +1,16 @@
 {
-  "name": "one-amex-jest-preset-react",
-  "description": "An opinionated Jest preset for One Amex React modules",
+  "name": "amex-jest-preset-react",
+  "description": "An opinionated Jest preset for React modules",
   "version": "1.0.0",
-  "contributors": [
-    "Andres Escobar <Andres.Escobar@aexp.com>",
-    "Jimmy King <Jimmy.King@aexp.com>"
-  ],
   "keywords": [
     "jest",
     "preset",
-    "One Amex",
+    "amex",
     "react",
     "quality"
   ],
   "dependencies": {
-    "one-amex-jest-preset": "^2.0.0",
+    "amex-jest-preset": "^3.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jasmine-reporters": "^2.2.0"
   },
@@ -28,23 +24,25 @@
   "devDependencies": {
     "jest": "^18.1.0"
   },
+  "contributors": [
+    "Andres Escobar",
+    "Jimmy King"
+  ],
+  "author": "Andres Escobar <andres.escobar@aexp.com> (https://github.com/anescobar1991)",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "ssh:****.com/one/one-amex-jest-preset-react.git"
+    "url": "https://github.com/americanexpress/amex-jest-preset-react.git"
   },
   "files": [
     "react-specific-preset.json",
     "scripts/create-jest-preset.js"
   ],
-  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "test": "jest",
     "postinstall": "node scripts/create-jest-preset.js"
   },
   "jest": {
-    "preset": "one-amex-jest-preset"
-  },
-  "publishConfig": {
-    "registry": "****.com/artifactory/api/npm/npm-virtual"
+    "preset": "amex-jest-preset"
   }
 }
