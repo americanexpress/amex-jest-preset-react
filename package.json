@@ -10,7 +10,7 @@
     "quality"
   ],
   "dependencies": {
-    "amex-jest-preset": "^3.0.0",
+    "amex-jest-preset": "^4.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jasmine-reporters": "^2.2.0"
   },
