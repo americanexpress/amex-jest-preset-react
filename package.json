@@ -11,18 +11,19 @@
   ],
   "dependencies": {
     "amex-jest-preset": "^4.0.0",
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jasmine-reporters": "^2.2.0"
   },
   "peerDependencies": {
-    "enzyme": "^2.8.2",
-    "enzyme-to-json": "^1.4.5",
-    "react": "^15.5.0",
-    "react-test-renderer": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "enzyme-to-json": "^3.0.1",
+    "react": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "jest": "^18.1.0"
+    "jest": "^21.2.1"
   },
   "contributors": [
     "Andres Escobar",
@@ -35,7 +36,8 @@
     "url": "https://github.com/americanexpress/amex-jest-preset-react.git"
   },
   "files": [
-    "react-specific-preset.json",
+    "jest-setup.js",
+    "react-specific-preset.js",
     "scripts/create-jest-preset.js"
   ],
   "scripts": {
@@ -43,6 +45,9 @@
     "postinstall": "node scripts/create-jest-preset.js"
   },
   "jest": {
-    "preset": "amex-jest-preset"
+    "preset": "amex-jest-preset",
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/jest-setup.js"
+    ]
   }
 }

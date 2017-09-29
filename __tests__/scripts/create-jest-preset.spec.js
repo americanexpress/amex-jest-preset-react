@@ -30,7 +30,7 @@ const mockReactSpecificPreset = {
 
 jest.mock('amex-jest-preset/jest-preset.json', () => mockBasePreset);
 
-jest.mock('../../react-specific-preset.json', () => mockReactSpecificPreset);
+jest.mock('../../react-specific-preset', () => mockReactSpecificPreset);
 
 fs.writeFileSync = jest.fn();
 

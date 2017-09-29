@@ -11,16 +11,10 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
+const reactSpecificPreset = require('../react-specific-preset');
 
-describe('react-specific-preset.json', () => {
-  it('should be valid parseable json', () => {
-    let isValidJson = true;
-    try {
-      require('../react-specific-preset.json');
-    } catch (error) {
-      isValidJson = false;
-    }
-
-    expect(isValidJson).toBe(true);
+describe('react-specific-preset', () => {
+  it('should be an object', () => {
+    expect(reactSpecificPreset).toBeInstanceOf(Object);
   });
 });
