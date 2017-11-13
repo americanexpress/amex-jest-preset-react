@@ -31,6 +31,10 @@ And... that's it! You now have all the boilerplate Jest configurations set up fo
 
 **Note:** You can (but better have a good reason to) override these configurations by [providing your own](http://facebook.github.io/jest/docs/configuration.html) `jest` configuration
 
+## Compatability
+
+Version 4.x of this package is compatible only with React 16.
+
 ## Contributing
 We welcome Your interest in the American Express Open Source Community on Github.
 Any Contributor to any Open Source Project managed by the American Express Open
