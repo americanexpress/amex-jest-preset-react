@@ -1,7 +1,7 @@
 amex-jest-preset-react
 ========
 
-An opinionated [Jest preset](http://facebook.github.io/jest/docs/configuration.html#preset-string) for React modules
+An opinionated [Jest preset](http://facebook.github.io/jest/docs/en/configuration.html#preset-string) for React modules
 
 For non-React modules use [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset)
 
@@ -9,9 +9,9 @@ For non-React modules use [amex-jest-preset](https://github.com/americanexpress/
 
 Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) and adds the following configurations that are specific to testing React modules:
 
-- [snapshotSerializers](http://facebook.github.io/jest/docs/configuration.html#snapshotserializers-array-string) tells Jest to use [enzyme-to-json's](https://github.com/adriantoine/enzyme-to-json) serializer
+- [snapshotSerializers](http://facebook.github.io/jest/docs/en/configuration.html#snapshotserializers-array-string) tells Jest to use [enzyme-to-json's](https://github.com/adriantoine/enzyme-to-json) serializer
 
-- [moduleNameMapper](http://facebook.github.io/jest/docs/configuration.html#modulenamemapper-object-string-string) tells Jest to treat CSS modules as identity objects
+- [moduleNameMapper](http://facebook.github.io/jest/docs/en/configuration.html#modulenamemapper-object-string-string) tells Jest to treat CSS modules as identity objects
 
 - [enzyme-adapter-react-16](http://airbnb.io/enzyme/docs/installation/react-16.html) configures enzyme for React 16
 
@@ -31,7 +31,7 @@ npm install --save-dev amex-jest-preset-react
 ```
 And... that's it! You now have all the boilerplate Jest configurations set up for you! Running `jest` from your `npm test` script will use all these configurations!
 
-**Note:** You can override these configurations by [providing your own](http://facebook.github.io/jest/docs/configuration.html) `jest` configuration
+**Note:** You can override these configurations by [providing your own](http://facebook.github.io/jest/docs/en/configuration.html) `jest` configuration
 
 ## Compatability
 
