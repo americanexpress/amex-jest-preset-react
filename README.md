@@ -13,6 +13,8 @@ Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) 
 
 - [moduleNameMapper](http://facebook.github.io/jest/docs/configuration.html#modulenamemapper-object-string-string) tells Jest to treat CSS modules as identity objects
 
+- [enzyme-adapter-react-16](http://airbnb.io/enzyme/docs/installation/react-16.html) configures enzyme for React 16
+
 ## Usage
 
 1. Install:
@@ -30,6 +32,10 @@ npm install --save-dev amex-jest-preset-react
 And... that's it! You now have all the boilerplate Jest configurations set up for you! Running `jest` from your `npm test` script will use all these configurations!
 
 **Note:** You can override these configurations by [providing your own](http://facebook.github.io/jest/docs/configuration.html) `jest` configuration
+
+## Compatability
+
+Version 4.x of this package is compatible only with React 16.
 
 ## Contributing
 We welcome Your interest in the American Express Open Source Community on Github.

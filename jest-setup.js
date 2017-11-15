@@ -11,10 +11,14 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-const reactSpecificPreset = require('../react-specific-preset');
 
-describe('react-specific-preset', () => {
-  it('should be an object', () => {
-    expect(reactSpecificPreset).toBeInstanceOf(Object);
-  });
-});
+require('amex-jest-preset/jest-setup');
+
+global.requestAnimationFrame = (callback) => {
+  setTimeout(callback, 0);
+};
+
+const Enzyme = require('enzyme');
+const Adapter = require('enzyme-adapter-react-16');
+
+Enzyme.configure({ adapter: new Adapter() });

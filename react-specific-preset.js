@@ -11,10 +11,16 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-const reactSpecificPreset = require('../react-specific-preset');
 
-describe('react-specific-preset', () => {
-  it('should be an object', () => {
-    expect(reactSpecificPreset).toBeInstanceOf(Object);
-  });
-});
+module.exports = {
+  setupTestFrameworkScriptFile: require.resolve('./jest-setup'),
+  snapshotSerializers: ['enzyme-to-json/serializer'],
+  moduleNameMapper: {
+    '\\.(css|scss)$': 'identity-obj-proxy'
+  },
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx}',
+    '!**/node_modules/**',
+    '!test-results/**'
+  ]
+}
