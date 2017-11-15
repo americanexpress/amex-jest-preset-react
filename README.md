@@ -13,6 +13,8 @@ Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) 
 
 - [moduleNameMapper](http://facebook.github.io/jest/docs/configuration.html#modulenamemapper-object-string-string) tells Jest to treat CSS modules as identity objects
 
+- [enzyme-adapter-react-16](http://airbnb.io/enzyme/docs/installation/react-16.html) configures enzyme for React 16
+
 ## Usage
 
 1. Install:
