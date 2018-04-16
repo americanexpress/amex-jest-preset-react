@@ -1,19 +1,18 @@
-amex-jest-preset-react
-========
+# amex-jest-preset-react
 
 An opinionated [Jest preset](http://facebook.github.io/jest/docs/en/configuration.html#preset-string) for React modules
 
-For non-React modules use [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset)
+For non-React projects use [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset)
 
 ## Configurations
 
 Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) and adds the following configurations that are specific to testing React modules:
 
-- [snapshotSerializers](http://facebook.github.io/jest/docs/en/configuration.html#snapshotserializers-array-string) tells Jest to use [enzyme-to-json's](https://github.com/adriantoine/enzyme-to-json) serializer
-
 - [moduleNameMapper](http://facebook.github.io/jest/docs/en/configuration.html#modulenamemapper-object-string-string) tells Jest to treat CSS modules as identity objects
 
-- [enzyme-adapter-react-16](http://airbnb.io/enzyme/docs/installation/react-16.html) configures enzyme for React 16
+- [setupTestFrameworkScriptFile](http://facebook.github.io/jest/docs/en/configuration.html#setuptestframeworkscriptfile-string) is where we setup [enzyme with enzyme-adapter-react-16](http://airbnb.io/enzyme/docs/installation/react-16.html)
+
+- [snapshotSerializers](http://facebook.github.io/jest/docs/en/configuration.html#snapshotserializers-array-string) tells Jest to use [enzyme-to-json's](https://github.com/adriantoine/enzyme-to-json) serializer
 
 ## Usage
 
@@ -21,17 +20,30 @@ Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) 
 ```bash
 npm install --save-dev amex-jest-preset-react
 ```
-2. And in your package.json:
+2. And in your [Jest configuration][]:
 ```json
 ...
-"jest": {
-    "preset": "amex-jest-preset-react"
+{
+  ...
+  "preset": "amex-jest-preset-react"
+  ...
 }
 ...
 ```
 And... that's it! You now have all the boilerplate Jest configurations set up for you! Running `jest` from your `npm test` script will use all these configurations!
 
-**Note:** You can override these configurations by [providing your own](http://facebook.github.io/jest/docs/en/configuration.html) `jest` configuration
+### Extending the preset provided configuration
+
+You can add on and/or override any values provided in this preset as you wish in your [Jest configuration][].
+
+It should be noted that if overriding the `setupTestFrameworkScriptFile` you may want to extend off of the [setup file provided by amex-jest-preset-react](./jest-setup.js) in order to preserve that files' content. Otherwise you will lose anything we provide for you in [there](./jest-setup.js). Do so as follows:
+
+```javascript
+// in custom-jest-setup.js
+require('amex-jest-preset-react/jest-setup);
+
+// your own custom setup
+```
 
 ## Compatability
 
@@ -44,12 +56,14 @@ Source Community must accept and sign an Agreement indicating agreement to the
 terms below. Except for the rights granted in this Agreement to American Express
 and to recipients of software distributed by American Express, You reserve all
 right, title, and interest, if any, in and to Your Contributions. Please [fill
-out the Agreement](http://goo.gl/forms/mIHWH1Dcuy).
+out the Agreement](https://cla-assistant.io/americanexpress/).
 
 ## License
 Any contributions made under this project will be governed by the [Apache License
-2.0](https://github.com/americanexpress/amex-jest-preset-react/blob/master/LICENSE.txt).
+2.0](./LICENSE.txt).
 
 ## Code of Conduct
-This project adheres to the [American Express Community Guidelines](https://github.com/americanexpress/amex-jest-preset-react/wiki/Code-of-Conduct).
+This project adheres to the [American Express Community Guidelines](./CODE_OF_CONDUCT.md).
 By participating, you are expected to honor these guidelines.
+
+[Jest configuration]: http://facebook.github.io/jest/docs/en/configuration.html
