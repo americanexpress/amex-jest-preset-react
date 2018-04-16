@@ -24,9 +24,7 @@ npm install --save-dev amex-jest-preset-react
 ```json
 ...
 {
-  ...
   "preset": "amex-jest-preset-react"
-  ...
 }
 ...
 ```
@@ -40,7 +38,7 @@ It should be noted that if overriding the `setupTestFrameworkScriptFile` you may
 
 ```javascript
 // in custom-jest-setup.js
-require('amex-jest-preset-react/jest-setup);
+require('amex-jest-preset-react/jest-setup');
 
 // your own custom setup
 ```
