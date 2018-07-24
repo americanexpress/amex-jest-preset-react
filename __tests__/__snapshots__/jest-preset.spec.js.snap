@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`a jest configuration is exported 1`] = `
+Object {
+  "cache": Any<Boolean>,
+  "cacheDirectory": "<rootDir>/.jest-cache",
+  "collectCoverage": true,
+  "collectCoverageFrom": Array [
+    "src/**/*.{js,jsx}",
+    "!**/node_modules/**",
+    "!test-results/**",
+  ],
+  "coverageDirectory": "<rootDir>/test-results/coverage",
+  "coverageReporters": Array [
+    "text",
+    "lcov",
+    "cobertura",
+  ],
+  "coverageThreshold": Object {
+    "global": Object {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100,
+    },
+  },
+  "moduleNameMapper": Object {
+    "\\\\.(css|scss)$": "identity-obj-proxy",
+  },
+  "modulePathIgnorePatterns": Array [
+    "npm-cache",
+    ".npm",
+  ],
+  "setupTestFrameworkScriptFile": Any<String>,
+  "snapshotSerializers": Array [
+    "enzyme-to-json/serializer",
+  ],
+  "testEnvironment": "jsdom",
+  "testResultsProcessor": Any<String>,
+}
+`;

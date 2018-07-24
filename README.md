@@ -8,6 +8,8 @@ For non-React projects use [amex-jest-preset](https://github.com/americanexpress
 
 Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) and adds the following configurations that are specific to testing React modules:
 
+- [testEnvironment](https://jestjs.io/docs/en/configuration.html#testenvironment-string) tells Jest to use `jsdom` test environment as it is often used while testing React components ([amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) sets `testEnvironment` to `node`)
+
 - [moduleNameMapper](http://facebook.github.io/jest/docs/en/configuration.html#modulenamemapper-object-string-string) tells Jest to treat CSS modules as identity objects
 
 - [setupTestFrameworkScriptFile](http://facebook.github.io/jest/docs/en/configuration.html#setuptestframeworkscriptfile-string) is where we setup [enzyme with enzyme-adapter-react-16](http://airbnb.io/enzyme/docs/installation/react-16.html)
