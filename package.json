@@ -9,21 +9,22 @@
     "react",
     "quality"
   ],
+  "main": "jest-preset.js",
   "dependencies": {
-    "amex-jest-preset": "^4.0.0",
+    "amex-jest-preset": "^5.0.0",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jasmine-reporters": "^2.2.0"
+    "identity-obj-proxy": "^3.0.0"
   },
   "peerDependencies": {
     "enzyme-to-json": "^3.0.1",
+    "jest": "^23.0.0",
     "react": "^16.0.0",
     "react-test-renderer": "^16.0.0",
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "jest": "^21.2.1"
+    "jest": ">=23.0.0"
   },
   "contributors": [
     "Andres Escobar",
@@ -37,12 +38,10 @@
   },
   "files": [
     "jest-setup.js",
-    "react-specific-preset.js",
-    "scripts/create-jest-preset.js"
+    "jest-preset.js"
   ],
   "scripts": {
-    "test": "jest",
-    "postinstall": "node scripts/create-jest-preset.js"
+    "test": "jest"
   },
   "jest": {
     "preset": "amex-jest-preset",

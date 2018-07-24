@@ -12,7 +12,9 @@
  * the License.
  */
 
-module.exports = {
+const basePreset = require('amex-jest-preset');
+const reactSpecificPreset = {
+  testEnvironment: 'jsdom',
   setupTestFrameworkScriptFile: require.resolve('./jest-setup'),
   snapshotSerializers: ['enzyme-to-json/serializer'],
   moduleNameMapper: {
@@ -23,4 +25,6 @@ module.exports = {
     '!**/node_modules/**',
     '!test-results/**'
   ]
-}
+};
+
+module.exports = Object.assign({}, basePreset, reactSpecificPreset);
