@@ -13,7 +13,7 @@
   "dependencies": {
     "amex-jest-preset": "^5.0.0",
     "enzyme": "^3.0.0",
-    "enzyme-adapter-react-16": "^1.0.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "identity-obj-proxy": "^3.0.0"
   },
   "peerDependencies": {
