@@ -24,6 +24,9 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "githook-scripts": "^1.0.1",
     "jest": ">=23.0.0"
   },
   "contributors": [
@@ -41,12 +44,16 @@
     "jest-preset.js"
   ],
   "scripts": {
-    "test": "jest"
+    "githook:commit-msg": "commitlint --edit $GIT_PARAMS",
+    "test": "jest",
+    "test:git-history": "commitlint --from origin/master --to HEAD",
+    "posttest": "npm run test:git-history"
   },
   "jest": {
     "preset": "amex-jest-preset",
     "coveragePathIgnorePatterns": [
-      "<rootDir>/jest-setup.js"
+      "<rootDir>/jest-setup.js",
+      "<rootDir>/commitlint.config.js"
     ]
   }
 }
