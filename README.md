@@ -4,6 +4,9 @@ An opinionated [Jest preset](http://facebook.github.io/jest/docs/en/configuratio
 
 For non-React projects use [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset)
 
+> Want to get paid for your contributions to `amex-jest-preset-react`?
+> Send your resume to oneamex.careers@aexp.com
+
 ## Configurations
 
 Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) and adds the following configurations that are specific to testing React modules:
