@@ -48,7 +48,7 @@ require('amex-jest-preset-react/jest-setup');
 // your own custom setup
 ```
 
-## Compatability
+## Compatibility
 
 Version 4.x of this package is compatible only with React 16.
 
