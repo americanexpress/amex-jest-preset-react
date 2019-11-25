@@ -1,0 +1,8 @@
+test-results
+__tests__
+CODEOWNERS
+.travis.yml
+*.tgz
+.jest-cache
+.vscode
+commitlint.config.js

@@ -24,9 +24,9 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.2",
-    "@commitlint/config-conventional": "^7.5.0",
-    "githook-scripts": "^1.0.1",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "husky": "^3.1.0",
     "jest": ">=23.0.0"
   },
   "contributors": [
@@ -44,10 +44,7 @@
     "jest-preset.js"
   ],
   "scripts": {
-    "githook:commit-msg": "commitlint --edit $GIT_PARAMS",
-    "test": "jest",
-    "test:git-history": "commitlint --from origin/master --to HEAD",
-    "posttest": "npm run test:git-history"
+    "test": "jest"
   },
   "jest": {
     "preset": "amex-jest-preset",
@@ -55,5 +52,11 @@
       "<rootDir>/jest-setup.js",
       "<rootDir>/commitlint.config.js"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
