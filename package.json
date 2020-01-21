@@ -27,7 +27,8 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "husky": "^3.1.0",
-    "jest": ">=23.0.0"
+    "jest": ">=23.0.0",
+    "lockfile-lint": "^3.0.8"
   },
   "contributors": [
     "Andres Escobar",
@@ -44,7 +45,9 @@
     "jest-preset.js"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -o https: -c -i",
+    "posttest": "npm run test:lockfile"
   },
   "jest": {
     "preset": "amex-jest-preset",
