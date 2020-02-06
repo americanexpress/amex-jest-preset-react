@@ -37,30 +37,20 @@ This project adheres to the American Express [Code of Conduct](./CODE_OF_CONDUCT
 
 4. You can now run any of these scripts from the root folder.
 
+
 #### Running tests
 
-- `npm run lint`
-
-Verifies that your code matches the American Express code style defined in
-[`babel-preset-amex`](https://github.com/americanexpress/babel-preset-amex).
-
-- `npm pretest`
-
-Runs `npm run lint`.
-
-- `npm test`
+- **`npm test`**
 
 Runs unit tests.
 
-- `npm run test:git-history`
+- **`npm run test:git-history`**
 
 Verifies the format of all commit messages on the current branch.
 
-- `npm posttest`
+- **`npm posttest`**
 
 Verifies the format of all commit messages on the current branch.
-
-Runs linting on the current branch and checks that the commits follow [conventional commits](https://www.conventionalcommits.org/)
 
 ## Submitting a new feature
 
