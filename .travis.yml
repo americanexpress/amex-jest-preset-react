@@ -1,16 +1,19 @@
 language: node_js
-node_js:
-  - "10"
-  - "12"
-before_install:
-  # Create a master branch for commitlint
-  # https://github.com/conventional-changelog/commitlint/issues/6
-  - git remote set-branches origin master && git fetch    
-deploy:
-  on:
-    tags: true
-    branch: master
-  provider: npm
-  email: open-source-ops@aexp.com
-  api_key:
-    secure: lURdp7hU9Kq5olYZlBSajvP9wIrxhwVyVHjtCGZ4Mm4Au8Arzix6z9ngDwVEFYjD25FeMJ3xJ6lSBBvDb5JUBvLihXJ/EbnoFZNXtZOHJvFHsFqk2d4kKXDXNubzxS+7WtU98AY9t3ApY5HNilrhPaDNygtoauVIOFelEDrAwgKouZ8kOrOvXnoHTizrVkCflQMMjfRGRwi48oAorAZteFGji6bNbPFKk2L+t6+V32z5/VfKK9B4LxtJABOG/BNQT+S19E/7RpfYLph204icycAknF9BabnTPeTdHldDSW7rjuReUtUleIHr2xsQul0hNZ0XdYtOK2RIxvVqt+AfQ7fhtCMehGePGp2LDyZVNgjRUxXnWp049+MpgiDW2WTzSo+CwWDZhu6sq6u/V1SYoUf5e3BFy0VWkM3DFcF/+pNrcvbeeOeriGPvrP+eQg6bTUKIY5yRdUFKtrBXKKTnadmh7fhS7QjNRIqzXXo2BR4nOAadc+ljJu5e7lykY1VBR3og+T9yTd2kgEuBqjKMcm7q0Ok/+JNJ9iSW3zNRmfsvjia8nh1PPzgkRh75LmZTU9imbDdUMzgwXrF/IYZdXZPIyiueTqLhAx+tww5cXiHTD1mCEFz2SSgdiKPd0IKieMq2j20kvDhZHSrLFL9+Em8Kne3Q7t5LGROm58vNyd8=
+jobs:
+  include:
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js:
+        - 10
+        - 12
+      before_install:
+        # Create a master branch for commitlint
+        # https://github.com/conventional-changelog/commitlint/issues/6
+        - git remote set-branches origin master && git fetch
+      deploy:
+        on:
+          branch: master
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
