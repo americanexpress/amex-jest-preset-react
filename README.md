@@ -15,7 +15,7 @@ Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) 
 
 - [moduleNameMapper](http://facebook.github.io/jest/docs/en/configuration.html#modulenamemapper-object-string-string) tells Jest to treat CSS modules as identity objects
 
-- [setupTestFrameworkScriptFile](http://facebook.github.io/jest/docs/en/configuration.html#setuptestframeworkscriptfile-string) is where we setup [enzyme with enzyme-adapter-react-16](http://airbnb.io/enzyme/docs/installation/react-16.html)
+- [setupFilesAfterEnv](http://facebook.github.io/jest/docs/en/configuration.html#setuptestframeworkscriptfile-string) is where we setup [enzyme with enzyme-adapter-react-16](http://airbnb.io/enzyme/docs/installation/react-16.html)
 
 - [snapshotSerializers](http://facebook.github.io/jest/docs/en/configuration.html#snapshotserializers-array-string) tells Jest to use [enzyme-to-json's](https://github.com/adriantoine/enzyme-to-json) serializer
 
@@ -39,7 +39,7 @@ And... that's it! You now have all the boilerplate Jest configurations set up fo
 
 You can add on and/or override any values provided in this preset as you wish in your [Jest configuration][].
 
-It should be noted that if overriding the `setupTestFrameworkScriptFile` you may want to extend off of the [setup file provided by amex-jest-preset-react](./jest-setup.js) in order to preserve that files' content. Otherwise you will lose anything we provide for you in [there](./jest-setup.js). Do so as follows:
+It should be noted that if overriding the `setupFilesAfterEnv` option you may want to extend off of the [setup file provided by amex-jest-preset-react](./jest-setup.js) in order to preserve that files' content. Otherwise you will lose anything we provide for you in [there](./jest-setup.js). Do so as follows:
 
 ```javascript
 // in custom-jest-setup.js
@@ -50,7 +50,7 @@ require('amex-jest-preset-react/jest-setup');
 
 ## Compatibility
 
-Version 4.x of this package is compatible only with React 16.
+This package is compatible only with React 16+.
 
 ## Contributing
 We welcome Your interest in the American Express Open Source Community on Github.
