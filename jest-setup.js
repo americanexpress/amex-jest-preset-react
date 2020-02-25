@@ -12,8 +12,6 @@
  * the License.
  */
 
-require('amex-jest-preset/jest-setup');
-
 global.requestAnimationFrame = (callback) => {
   setTimeout(callback, 0);
 };
