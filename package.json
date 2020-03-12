@@ -48,7 +48,8 @@
     "jest-preset.js"
   ],
   "scripts": {
-    "test": "jest",
+    "test": "jest && npm run test:git-history",
+    "test:git-history": "commitlint --from origin/master --to HEAD",
     "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -o https: -c -i",
     "posttest": "npm run test:lockfile"
   },
