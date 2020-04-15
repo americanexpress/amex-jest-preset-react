@@ -72,19 +72,19 @@ Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) 
 
 This package is compatible only with React 16+.
 
-## License
+## 🗝️ License
 
 Any contributions made under this project will be governed by the [Apache License
 2.0](./LICENSE.txt).
 
-## Code of Conduct
+## 🗣️ Code of Conduct
 
 This project adheres to the [American Express Community Guidelines](./CODE_OF_CONDUCT.md).
 By participating, you are expected to honor these guidelines.
 
 [Jest configuration]: http://facebook.github.io/jest/docs/en/configuration.html
 
-## Contributing
+## 🏆 Contributing
 
 We welcome Your interest in the American Express Open Source Community on Github.
 Any Contributor to any Open Source Project managed by the American Express Open
