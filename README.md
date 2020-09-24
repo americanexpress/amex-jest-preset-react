@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src='https://github.com/americanexpress/amex-jest-preset-react/raw/master/amex-jest-preset-react.png' alt="amex-jest-preset-react - One Amex" width='50%'/>
+  <img src='https://github.com/americanexpress/amex-jest-preset-react/raw/main/amex-jest-preset-react.png' alt="amex-jest-preset-react - One Amex" width='50%'/>
 </h1>
 
 > An opinionated [Jest preset](http://facebook.github.io/jest/docs/en/configuration.html#preset-string) for React modules. For non-React projects use [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset)
