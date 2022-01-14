@@ -47,9 +47,8 @@
   "peerDependencies": {
     "enzyme-to-json": "^3.0.1",
     "jest": ">=24.0.0",
-    "react": ">=16 <19",
-    "react-test-renderer": ">=16 <19",
-    "react-dom": ">=16 <19"
+    "react": "16.x",
+    "react-dom": "16.x"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
