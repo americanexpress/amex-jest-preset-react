@@ -1,6 +1,9 @@
 # dependencies
 node_modules
 
+#npm
+*.tgz
+
 # testing
 test-results
 jest-preset.json
