@@ -1,3 +1,10 @@
+## [6.1.2](https://github.com/americanexpress/amex-jest-preset-react/compare/v6.1.1...v6.1.2) (2022-01-14)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump semantic-release from 17.1.2 to 17.2.3 ([#31](https://github.com/americanexpress/amex-jest-preset-react/issues/31)) ([4686b7b](https://github.com/americanexpress/amex-jest-preset-react/commit/4686b7b73383b23f98a2835948e88a8aba90eb57))
+
 ## [6.1.1](https://github.com/americanexpress/amex-jest-preset-react/compare/v6.1.0...v6.1.1) (2021-11-29)
 
 
