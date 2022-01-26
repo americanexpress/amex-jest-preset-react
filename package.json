@@ -11,7 +11,7 @@
   ],
   "main": "jest-preset.js",
   "dependencies": {
-    "amex-jest-preset": "^5.0.1",
+    "amex-jest-preset": "^5.1.0",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "identity-obj-proxy": "^3.0.0"
