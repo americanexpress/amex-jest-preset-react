@@ -39,10 +39,12 @@
     ]
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
     "amex-jest-preset": "^6.1.0",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.7.0",
-    "identity-obj-proxy": "^3.0.0"
+    "identity-obj-proxy": "^3.0.0",
+    "whatwg-fetch": "^3.6.2"
   },
   "peerDependencies": {
     "enzyme-to-json": "^3.0.1",
