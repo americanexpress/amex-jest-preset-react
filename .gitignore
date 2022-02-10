@@ -9,6 +9,7 @@ jest-preset.json
 # misc
 .DS_Store
 npm-debug.log
+*.tgz
 
 # IDEs
 .idea

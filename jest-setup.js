@@ -12,6 +12,9 @@
  * the License.
  */
 
+require('@testing-library/jest-dom');
+require('whatwg-fetch');
+
 global.requestAnimationFrame = (callback) => {
   setTimeout(callback, 0);
 };
