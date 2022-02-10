@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/americanexpress/amex-jest-preset-react/compare/v6.1.2...v7.0.0) (2022-02-10)
+
+
+### Features
+
+* **rtl:** add jest-dom to jest-setup.js ([#37](https://github.com/americanexpress/amex-jest-preset-react/issues/37)) ([3cdcb2e](https://github.com/americanexpress/amex-jest-preset-react/commit/3cdcb2e7363451f135104e618a6b22f0f532cc48))
+
+
+### BREAKING CHANGES
+
+* **rtl:** add jest-dom to setupFilesAfterEnv
+
 ## [6.1.2](https://github.com/americanexpress/amex-jest-preset-react/compare/v6.1.1...v6.1.2) (2022-01-14)
 
 
