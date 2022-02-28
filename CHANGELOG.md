@@ -1,3 +1,15 @@
+# [8.0.0](https://github.com/americanexpress/amex-jest-preset-react/compare/v7.0.0...v8.0.0) (2022-02-28)
+
+
+### Features
+
+* **adapter:** upgrade adapter to react 17 ([#45](https://github.com/americanexpress/amex-jest-preset-react/issues/45)) ([2d54bb1](https://github.com/americanexpress/amex-jest-preset-react/commit/2d54bb16b1e75ddc1885ecb3f0fcaa23d010a034))
+
+
+### BREAKING CHANGES
+
+* **adapter:** upgrade adapter to react 17
+
 # [7.0.0](https://github.com/americanexpress/amex-jest-preset-react/compare/v6.1.2...v7.0.0) (2022-02-10)
 
 
