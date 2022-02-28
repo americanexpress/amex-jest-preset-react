@@ -1,7 +1,7 @@
 {
   "name": "amex-jest-preset-react",
   "description": "An opinionated Jest preset for React modules",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "keywords": [
     "jest",
     "preset",
