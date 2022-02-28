@@ -40,17 +40,17 @@
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "amex-jest-preset": "^6.1.0",
     "enzyme": "^3.0.0",
-    "enzyme-adapter-react-16": "^1.7.0",
     "identity-obj-proxy": "^3.0.0",
     "whatwg-fetch": "^3.6.2"
   },
   "peerDependencies": {
     "enzyme-to-json": "^3.0.1",
     "jest": ">=24.0.0",
-    "react": "16.x",
-    "react-dom": "16.x"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
