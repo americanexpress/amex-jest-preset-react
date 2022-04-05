@@ -1,3 +1,10 @@
+## [8.0.1](https://github.com/americanexpress/amex-jest-preset-react/compare/v8.0.0...v8.0.1) (2022-04-05)
+
+
+### Bug Fixes
+
+* **labeler:** fix globing ([6e6dcfc](https://github.com/americanexpress/amex-jest-preset-react/commit/6e6dcfc0f86db4308b0391a115c118d55fb98602))
+
 # [8.0.0](https://github.com/americanexpress/amex-jest-preset-react/compare/v7.0.0...v8.0.0) (2022-02-28)
 
 
