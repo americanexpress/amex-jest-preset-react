@@ -1,3 +1,10 @@
+# [8.1.0](https://github.com/americanexpress/amex-jest-preset-react/compare/v8.0.1...v8.1.0) (2023-07-07)
+
+
+### Features
+
+* **jest-preset:** collect coverage from typescript files ([#63](https://github.com/americanexpress/amex-jest-preset-react/issues/63)) ([125280a](https://github.com/americanexpress/amex-jest-preset-react/commit/125280a9f9320732db12e207cfe25c3fa8d94bd0))
+
 ## [8.0.1](https://github.com/americanexpress/amex-jest-preset-react/compare/v8.0.0...v8.0.1) (2022-04-05)
 
 
