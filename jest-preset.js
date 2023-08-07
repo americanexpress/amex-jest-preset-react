@@ -21,7 +21,7 @@ const reactSpecificPreset = {
     '\\.(css|scss)$': 'identity-obj-proxy'
   },
   collectCoverageFrom: [
-    'src/**/*.{js,jsx}',
+    'src/**/*.{js,jsx,ts,tsx}',
     '!**/node_modules/**',
     '!test-results/**'
   ]
