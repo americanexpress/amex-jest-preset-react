@@ -16,7 +16,6 @@ const basePreset = require('amex-jest-preset');
 const reactSpecificPreset = {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: [require.resolve('./jest-setup')],
-  snapshotSerializers: ['enzyme-to-json/serializer'],
   moduleNameMapper: {
     '\\.(css|scss)$': 'identity-obj-proxy'
   },
