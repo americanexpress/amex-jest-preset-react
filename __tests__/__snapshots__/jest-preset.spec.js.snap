@@ -32,9 +32,6 @@ exports[`a jest configuration is exported 1`] = `
     ".npm",
   ],
   "setupFilesAfterEnv": Any<Array>,
-  "snapshotSerializers": [
-    "enzyme-to-json/serializer",
-  ],
   "testEnvironment": "jsdom",
   "testResultsProcessor": Any<String>,
 }
