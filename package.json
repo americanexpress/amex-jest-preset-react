@@ -39,15 +39,15 @@
     ]
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/jest-dom": "^6.4.2",
     "amex-jest-preset": "^6.1.0",
     "identity-obj-proxy": "^3.0.0",
     "whatwg-fetch": "^3.6.2"
   },
   "peerDependencies": {
     "jest": ">=24.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^17.0.2||^18.2.0",
+    "react-dom": "^17.0.2||^18.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
