@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.2",
-    "amex-jest-preset": "^6.1.0",
+    "amex-jest-preset": "^7.0.0",
     "identity-obj-proxy": "^3.0.0",
     "whatwg-fetch": "^3.6.2"
   },

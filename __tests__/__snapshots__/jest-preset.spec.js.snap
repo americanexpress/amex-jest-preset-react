@@ -27,10 +27,6 @@ exports[`a jest configuration is exported 1`] = `
   "moduleNameMapper": {
     "\\.(css|scss)$": "identity-obj-proxy",
   },
-  "modulePathIgnorePatterns": [
-    "npm-cache",
-    ".npm",
-  ],
   "setupFilesAfterEnv": Any<Array>,
   "testEnvironment": "jsdom",
   "testResultsProcessor": Any<String>,
