@@ -64,13 +64,9 @@ Extends [amex-jest-preset](https://github.com/americanexpress/amex-jest-preset) 
 
 - [moduleNameMapper](http://facebook.github.io/jest/docs/en/configuration.html#modulenamemapper-object-string-string) tells Jest to treat CSS modules as identity objects
 
-- [setupFilesAfterEnv](https://jestjs.io/docs/en/configuration.html#setupfilesafterenv-array) is where we setup [enzyme with enzyme-adapter-react-16](http://airbnb.io/enzyme/docs/installation/react-16.html)
-
-- [snapshotSerializers](http://facebook.github.io/jest/docs/en/configuration.html#snapshotserializers-array-string) tells Jest to use [enzyme-to-json's](https://github.com/adriantoine/enzyme-to-json) serializer
-
 ### Compatibility
 
-This package is compatible only with React 16+.
+This package is compatible only with React 17+.
 
 ## 🗝️ License
 
