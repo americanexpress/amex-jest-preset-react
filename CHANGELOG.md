@@ -1,3 +1,22 @@
+# [9.0.0](https://github.com/americanexpress/amex-jest-preset-react/compare/v8.1.0...v9.0.0) (2024-02-17)
+
+
+### chore
+
+* **node:** drop node 16 support ([2ec5125](https://github.com/americanexpress/amex-jest-preset-react/commit/2ec5125550c660320f9421d11fed4ed408ed5056))
+
+
+### Features
+
+* **peer-deps:** allow react 18 ([db79ec5](https://github.com/americanexpress/amex-jest-preset-react/commit/db79ec59c191165448f0bcd8fd55282f93e567b0))
+* remove enzyme support ([#72](https://github.com/americanexpress/amex-jest-preset-react/issues/72)) ([24ed427](https://github.com/americanexpress/amex-jest-preset-react/commit/24ed427f9c128275ca2e5dfb53068393d2982a05))
+
+
+### BREAKING CHANGES
+
+* **node:** drop node 16 support
+* enzyme adapter and serializer must now be configured independently if needed
+
 # [8.1.0](https://github.com/americanexpress/amex-jest-preset-react/compare/v8.0.1...v8.1.0) (2023-07-07)
 
 
