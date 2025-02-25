@@ -1,3 +1,10 @@
+## [9.0.1](https://github.com/americanexpress/amex-jest-preset-react/compare/v9.0.0...v9.0.1) (2025-02-25)
+
+
+### Bug Fixes
+
+* relax react peer deps ([#76](https://github.com/americanexpress/amex-jest-preset-react/issues/76)) ([030c880](https://github.com/americanexpress/amex-jest-preset-react/commit/030c880e2b1eb17b6a912445c75a2a6fbd1be400))
+
 # [9.0.0](https://github.com/americanexpress/amex-jest-preset-react/compare/v8.1.0...v9.0.0) (2024-02-17)
 
 
